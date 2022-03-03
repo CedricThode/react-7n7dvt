@@ -13,10 +13,9 @@ function Things() {
   }
   return (
     <div>
-      <button onClick={fetchRandomData}>Fetch Random Data</button>
+      <button onClick={fetchRandomData}>Fetch Random Joke</button>
       <div>
-          {jokes &&
-          jokes.map((joke) => (
+          {jokes.map((joke) => (
             <>
               <p>Joke: {joke.value}</p>
             </>
