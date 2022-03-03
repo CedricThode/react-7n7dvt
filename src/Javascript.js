@@ -5,21 +5,20 @@ function Things() {
   const [jokes, setJokes] = useState([]);
 
   function fetchRandomData() {
-    axios.get('https://api.chucknorris.io/jokes/random')
-    .then((response) => {
+    axios.get('https://api.chucknorris.io/jokes/random').then((response) => {
       setJokes(response.data.categories);
-      console.log(response.data);
-    })
-  }
+      // console.log(response.data);
+    });
+  };
   return (
     <div>
       <button onClick={fetchRandomData}>Fetch Random Joke</button>
       <div>
-          {jokes.map((joke) => (
-            <>
-              <p>Joke: {joke.value}</p>
-            </>
-          ))}
+        {jokes && jokes.map((joke) => (
+          <>
+            <p>Joke: {joke.value}</p>
+          </>
+        ))}
       </div>
     </div>
   );
