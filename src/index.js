@@ -1,6 +1,6 @@
-import React from "react";
-import ReactDOM from "react-dom";
+import React from 'react';
+import ReactDOM from 'react-dom';
 
-import Javascript from "./Javascript";
+import Javascript from './Javascript';
 
-ReactDOM.render(<Javascript />, document.getElementById("root"));
+ReactDOM.render(<Javascript />, document.getElementById('root'));
