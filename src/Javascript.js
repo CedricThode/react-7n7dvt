@@ -18,7 +18,6 @@ function Things() {
           {jokes &&
           jokes.map((joke) => (
             <>
-              <img src={joke.icon_url} />
               <p>Joke: {joke.value}</p>
             </>
           ))}
